@@ -1,0 +1,362 @@
+
+
+@font-face {
+    font-family: brandon;
+    src: url(../../assets/fonts/brandon.ttf);
+}
+.navbar{
+	margin-top:20px;
+}
+.navbar-nav a{
+	color:#2e2e2e;
+	letter-spacing: .1em;
+	text-decoration: none;
+	font-family: "brandon",Tahoma,sans-serif;
+    text-transform: uppercase; 
+	padding:0px;
+	margin:0px;
+} 
+.navbar .nav>li>a:focus, .nav>li>a:hover {
+	background-color:transparent !important;
+}
+.navbar-nav a:hover{
+	opacity: 0.2; 
+	color:#2e2e2e;
+	transition:opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}  
+
+.img-responsive {
+    margin: 0 auto;
+	margin-top:100px;
+}
+
+@media (min-width: 769px) {
+	.navbar-centered .navbar-nav {
+		float: none;
+		text-align: center;
+	}
+	.navbar-centered .navbar-nav > li {
+		float: none;
+	}
+	.navbar-centered .nav > li {
+		display: inline;
+	}
+	.navbar-centered .nav > li > a {
+		display: inline-block;
+	} 
+}
+@media (max-width:767px) {
+	.menu{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    position: absolute; 
+    width: 100%; 
+    left: 0;
+    cursor: pointer;
+    background-color: #242424;
+	}.menu a{
+    color: #fff;
+    cursor: pointer;
+	}
+	.dotted{
+		display:none;
+	}
+	.navbar-nav a:hover{ 
+	color:#fff;
+	opacity: 0.5 !important; 
+	} 
+	.reposition{
+		font-size: 1.2em;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+#site-footer {
+    background-color: #242424;
+    text-align: center;
+}
+.theme-light, .work-header {
+    color: #fff;
+}
+.button{
+	font-size:1.5rem !important;
+	transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+	border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+	line-height: normal;
+    position: relative;
+    text-align: center;
+    -webkit-appearance: none;
+    display: inline-block;
+padding-top: 1.8rem;
+    padding-right: 3rem;
+    padding-bottom: 1.80rem;
+    padding-left: 3rem;
+    letter-spacing: 0.2em;
+	text-decoration: none;
+	font-family: "brandon",Tahoma,sans-serif;
+    text-transform: uppercase; 
+}
+.button:hover{
+	background-color: #fff;
+    border-color: #fff;
+	text-decoration: none;
+	color: #242424;
+}
+.button a{ 
+	color:#fff !important;
+	border-color: #fff !important;
+	letter-spacing: .1em;
+	text-decoration: none;
+	font-family: "brandon",Tahoma,sans-serif;
+    text-transform: uppercase; 
+}
+@media only screen and (min-width: 45.063em){
+	#site-footer .inner-content {
+		padding-top: 80px;
+		padding-bottom: 65px;
+	}
+}
+#site-footer .name-url{
+	font-family: "brandon",Tahoma,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+#site-footer .copyright{
+	font-family: "brandon",Tahoma,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+	text-transform: uppercase;
+}
+.name-url li {
+  list-style: none !important;
+}
+.social-icons li {
+  list-style: none !important;
+}
+.contact a {
+  color:#fff;
+}
+@media only screen and (min-width: 45.063em){
+	#site-footer .name-url {
+		margin-bottom: 14px;
+		font-size: 1.8rem;
+		font-family: "brandon",Tahoma,sans-serif;
+		letter-spacing: 0.1em;
+	}
+	#site-footer .social-icons {
+		margin-top: 30px;
+	}
+	#site-footer .social-icons li {
+		margin: 0 14px;
+	}
+	#site-footer .copyright {
+		font-size: 1.3725rem;
+		font-family: "brandon",Tahoma,sans-serif;
+		letter-spacing: 0.1em;
+	}
+	#site-footer .contact {
+		margin-bottom: 75px;
+	}
+	.work-list {
+		padding-bottom: 240px;
+	}
+}
+#site-footer .copyright {
+    text-transform: uppercase;
+}
+.social-icons li{
+    display: inline-block;
+}
+.fa-facebook:before, .fa-twitter:before,.fa-linkedin:before,.fa-github:before {
+    display: block;
+    float: left;
+    width: 100%;
+    text-indent: 0;
+    text-align: center;
+    font-size: 27px;
+	color:#fff;
+}   
+#site-footer ul{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.name-url li{
+    display: inline-block;
+}
+.name-url .dotted{
+	margin:0px 15px 0px 15px;
+}
+
+
+
+
+.work-list {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5rem;
+}
+@media only screen and (min-width: 45.063em){
+.column.large-centered, .columns.large-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+}
+@media only screen and (min-width: 63.063em){
+.large-10 {
+    width: 100%;
+}
+}
+@media only screen and (min-width: 45.063em){
+.column, .columns {
+    position: relative;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; 
+}
+}
+.work-list .work-link {
+    position: relative;
+    display: block;
+}
+.work-list .work-link a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+.work-list .left-image .work-image {
+    margin-right: auto;
+}
+.work-list .work-image {
+    width: 910px;
+}
+.work-list .left-image .work-image img {
+    margin-right: auto;
+}
+.work-list .work-image img {
+    display: block;
+    width: 346px;
+    height: auto;
+}
+img:not(.no-resize) {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.work-list .left-image .work-header {
+    right: 0;
+}
+.work-list .work-header {
+    display: block;
+    position: absolute;
+    top: -40px;
+    width: 604px;
+}
+@media only screen and (min-width: 45.063em){
+.work-header {
+    height: 336px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+}
+.work-header {
+    transition: background-color 0.3s ease-out; 
+    border-top: 1px solid #e6e6e6;
+    background-color: #242424;
+    text-align: center;
+    padding: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 45.063em){
+.work-header .work-title {
+    margin: 0 0 30px;
+}}
+.work-header .work-title {
+    font-family: "brandon",Tahoma,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    display: inline;
+    position: relative;
+    transition: transform 0.15s ease-in-out 0.1s;
+}
+@media only screen and (min-width: 45.063em){
+.work-list .work-title {
+    font-size: 4rem;
+}
+}
+.work-list .work-header .work-excerpt {
+    margin: 25px auto 0 auto;
+}
+@media only screen and (min-width: 45.063em){
+.work-header .work-excerpt {
+    max-width: 80%;
+}}
+.work-header .work-excerpt { 
+    letter-spacing: 0;
+	text-align: center;
+	font-family: "brandon",Tahoma,sans-serif;
+}
+@media only screen and (min-width: 45.063em){
+.work-list .work-excerpt {
+    font-size: 1.5rem;
+	text-align: center;
+}}
+.work-excerpt p {
+    line-height: 1.6;
+	letter-spacing: 0;
+	font-weight:normal !important;
+	font-size: 2.2rem;
+	text-align: center;
+	font-family: "brandon",Tahoma,sans-serif;
+}
+
+.work-excerpt p .br-resp {
+    display: none;
+}
+@media only screen and (min-width: 63.063em){
+.br-resp .xlarge-only {
+    display: inline;
+}
+}
