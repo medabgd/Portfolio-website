@@ -16,7 +16,7 @@
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 	<body>
-		<img  class="img-responsive" src="assets/images/madebytj_logo.png"/>
+		<a class="logodesc" href="index.php"><img class="img-responsive" src="assets/images/madebytj_logo.png"/></a>
 		<div class="navbar navbar-static-top menu">
 			<div class="container menu">
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">

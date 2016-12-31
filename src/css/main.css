@@ -302,7 +302,9 @@ img:not(.no-resize) {
     text-align: center;
     padding: 0 5px; 
 }
-
+.logodesc a{
+	text-decoration:none;
+}
 
 
 
