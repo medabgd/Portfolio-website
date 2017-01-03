@@ -184,6 +184,9 @@ padding-top: 1.8rem;
 .social-icons li{
     display: inline-block;
 }
+.social-icons li a:hover{ 
+	opacity:0.5;
+}
 .fa-facebook:before, .fa-twitter:before,.fa-linkedin:before,.fa-github:before {
     display: block;
     float: left;

@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Test</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-		<meta name="description" content=""/>
-		<meta name="keywords" content=""/>
+		<title>Portfolio website</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="description" content="Milos Medic is a Serbian student and web developer, for web sites and applications."/>
+		<meta name="keywords" content="Milos Medic, serbia, student, web developer, web site, front-end, back-end, php, javascript"/>
 		<meta name="author" content="Milos Medic"/>
-		<link rel="shortcut icon" href=""/>
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Portfolio website - Made by Milos Medic" />
+		<meta property="og:description" content="Milos Medic is a Serbian student and web developer, for web sites and applications." />
+		<meta property="og:url" content="http://milosmedic.com" />
+		<meta property="og:site_name" content="Made by Milos Medic" />
+		<meta property="fb:admins" content="100005213861682" />
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="src/css/main.css"/>  
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +22,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
-	<body>
+	<body> 
 		<a class="logodesc" href="index.php"><img class="img-responsive" src="assets/images/madebytj_logo.png"/></a>
 		<div class="navbar navbar-static-top menu">
 			<div class="container menu">
@@ -62,7 +69,7 @@
 					<div class="column-inner">
 						<div class="share-tile">
 							Share On
-						</div>
+						</div> 
 						<ul class="inline">
 							<li>
 								<a target="_blank" rel="nofollow" class="button-label facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmilosmedic.com" title="Share on Facebook: Portfolio+Website+-+Made+by+Milos+Medic">
