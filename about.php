@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Portfolio website</title>
@@ -22,8 +21,8 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
-	<body> 
-		<a class="logodesc" href="index.php"><img class="img-responsive" src="assets/images/madebytj_logo.png"/></a>
+	<body>
+	<a class="logodesc" href="index.php"><img class="img-responsive" src="assets/images/madebytj_logo.png"/></a>
 		<div class="navbar navbar-static-top menu">
 			<div class="container menu">
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -31,45 +30,42 @@
 				</button>
 				<div class="collapse navbar-collapse navHeaderCollapse navbar-centered">
 					<ul class="nav navbar-nav" id="nav">
-						<li><a class="active" href="index.php">Home</a></li>
-						<li><span class="dotted">&#8226;</span><a href="about.php">About</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><span class="dotted">&#8226;</span><a class="active" href="about.php">About</a></li>
 						<li><span class="dotted">&#8226;</span><a href="contact.php">Contact</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<aside id="share-all" class="row">
-			<div class="container">
-				<div id="site-content">
-					<div class="row work-list">
-						<div class="col-xs-12">
-							<a class="work-link left-image" href="http://forum.milosmedic.com" title="Forum Meda">
-								<div class="work-image" style="background-color:#f7f0f7">
-									<img width="692" height="692" src="assets/images/forum.png" class="attachment-post-thumbnail wp-post-image" alt="Forum Meda" />
-								</div>
-								<div class="work-header">
-									<div class="work-title">
-										ForumMeda
-									</div>
-									<div  class="work-excerpt">
-										<p>Desktop application<br class="br-resp xlarge-only" /><br class="br-resp large-only" /><br class="br-resp medium-only" /> to share and comment <br class="br-resp small-only" />any content.</p>
-									</div>
-								</div>				
-							</a>
-						</div>
-					</div>
+		<div class="container-fluid"> 
+			<div class="row" id="contact">
+				<div class="col-lg-6 col-lg-offset-3">
+					<section class="about-section description row">
+						<p>
+							<em class="new-row">My name is Milos Medic and I am a student</em>
+							<em class="new-row">currently living and studying in Belgrade. </em>
+							<em>I am looking for internship/junior job position.</em><br/>
+							<em>If you would like to know more or just say hi, </em>
+							<em>don’t hesitate to contact me.</em>
+						</p>
+					</section>
 				</div>
-			</div>
-		</aside>
-		
+			</div>	
+			<section class="about-section row">
+				<div class="column small-12 botom">
+					<a href="mailto:milos.medic.pvt@gmail.com" title="Available for hire" class="button available">Available for hire</a>
+				</div>
+			</section>			
+		</div>
+			
 		<aside id="share-all" class="row">
 			<div class="container">
 				<div class="col-xs-12">
 					<div class="column-inner">
 						<div class="share-tile">
 							Share On
-						</div> 
+						</div>
 						<ul class="inline">
 							<li>
 								<a target="_blank" rel="nofollow" class="button-label facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmilosmedic.com" title="Share on Facebook: Portfolio+Website+-+Made+by+Milos+Medic">
@@ -90,8 +86,8 @@
 					</div>
 				</div>
 			</div>
-		</aside>
-		
+		</aside>			
+			
 		<footer id="site-footer" class="theme-light">
 			<div class="row">
 				<div class="column small-12 inner-content">
@@ -122,4 +118,4 @@
 			</div>
 		</footer>
 	</body>
-</html>
+	</html>

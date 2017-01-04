@@ -67,8 +67,8 @@
 				<div class="collapse navbar-collapse navHeaderCollapse navbar-centered">
 					<ul class="nav navbar-nav" id="nav">
 						<li><a href="index.php">Home</a></li>
-						<li><span class="dotted">&#8226;</span><a href="#">About</a></li>
-						<li><span class="dotted">&#8226;</span><a href="contact.php">Contact</a></li>
+						<li><span class="dotted">&#8226;</span><a href="about.php">About</a></li>
+						<li><span class="dotted">&#8226;</span><a class="active" href="contact.php">Contact</a></li>
 					</ul>
 				</div>
 			</div>
