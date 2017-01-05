@@ -10,27 +10,61 @@
 		$data = json_decode($response);
 
 		if($data->success===true){
-			header("Location:index.php?CaptchaPass=True");
+			header("Location:contact.php?CaptchaPass=True");
 		}else{
-			header("Location:index.php?CaptchaFailed=True");
+			header("Location:contact.php?CaptchaFailed=True");
 		}
 
+
+		
+		
 		$name = trim($_REQUEST['name']); 
 		$mail = trim($_REQUEST['email']); 
-		$message = trim($_REQUEST['message']);
-		$headers =  'MIME-Version: 1.0' . "\r\n"; 
-		$headers .= 'From:'.$name.' <'.$mail.'>' . "\r\n";
-		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
-			
-		$to = "milos.medic.pvt@gmail.com";
-		$subject = 'Contact form'; 
-		$message = '<!DOCTYPE html><html><head><style type="text/css">.table-fill{background:#fff;border-radius:3px;border-collapse:collapse;height:320px;margin:auto;max-width:600px;padding:5px;width:100%;box-shadow:0 5px 10px rgba(0,0,0,0.1);animation:float 5s infinite}th{color:#D5DDE5;background:#1b1e24;border-bottom:4px solid #9ea7af;border-right:1px solid #343a45;font-size:23px;font-weight:100;padding:24px;text-align:left;text-shadow:0 1px 1px rgba(0,0,0,0.1);vertical-align:middle}th:first-child{border-top-left-radius:3px}th:last-child{border-top-right-radius:3px;border-right:none}tr{border-top:1px solid #C1C3D1;border-bottom-:1px solid #C1C3D1;color:#666B85;font-size:16px;font-weight:400;text-shadow:0 1px 1px rgba(256,256,256,0.1)}tr:hover td{background:#4E5066;color:#FFF;border-top:1px solid #22262e;border-bottom:1px solid #22262e}tr:first-child{border-top:none}tr:last-child{border-bottom:none}tr:nth-child(odd) td{background:#EBEBEB}tr:nth-child(odd):hover td{background:#4E5066}tr:last-child td:first-child{border-bottom-left-radius:3px}tr:last-child td:last-child{border-bottom-right-radius:3px}td{background:#FFF;padding:20px;text-align:left;vertical-align:middle;font-weight:300;font-size:18px;text-shadow:-1px -1px 1px rgba(0,0,0,0.1);border-right:1px solid #C1C3D1}td:last-child{border-right:0}th.text-left{text-align:left}th.text-center{text-align:center}th.text-right{text-align:right}td.text-left{text-align:left}td.text-center{text-align:center}td.text-right{text-align:right}</style></head><body><table class="table-fill"><thead><tr><th class="text-left">Name</th><th class="text-left">Email</th><th class="text-left">Message</th></tr></thead><tbody class="table-hover"><tr><td class="text-left">'.$name.'</td><td class="text-left">'.$mail.'</td><td class="text-left">'.$message.'</td></tr></tbody></table></body></html>';
-			
-		if (mail($to, $subject, $message, $headers)) {   
-			header("Location:index.php?MailPass=True");
-		}else { 
-			header("Location:index.php?MailFailed=True");
+		$message = trim($_REQUEST['message']); 
+		
+		$rname = "/^[\w\s\/\.\_\d]{2,28}$/";
+		$rmail = "/^[\w\.]+[\d]*@[\w]+\.\w{2,3}(\.[\w]{2})?$/"; 
+		
+		$greske = array(); 
+		 $g=0; 
+		
+		if(!preg_match($rname, $name)){
+			$g++;
+			echo("n");
 		}
+		if(!preg_match($rmail, $mail)){
+			$g++;
+			echo("e");
+		}   
+		if($message==""){
+			$g++;
+			echo("m");
+		}  
+		
+		if($g==0){ 		
+			$name = trim($_REQUEST['name']); 
+			$mail = trim($_REQUEST['email']); 
+			$message = trim($_REQUEST['message']);
+			$headers =  'MIME-Version: 1.0' . "\r\n"; 
+			$headers .= 'From:'.$name.' <'.$mail.'>' . "\r\n";
+			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
+				
+			$to = "milos.medic.pvt@gmail.com";
+			$subject = 'Contact form'; 
+			$message = '<!DOCTYPE html><html><head><style type="text/css">.table-fill{background:#fff;border-radius:3px;border-collapse:collapse;height:320px;margin:auto;max-width:600px;padding:5px;width:100%;box-shadow:0 5px 10px rgba(0,0,0,0.1);animation:float 5s infinite}th{color:#D5DDE5;background:#1b1e24;border-bottom:4px solid #9ea7af;border-right:1px solid #343a45;font-size:23px;font-weight:100;padding:24px;text-align:left;text-shadow:0 1px 1px rgba(0,0,0,0.1);vertical-align:middle}th:first-child{border-top-left-radius:3px}th:last-child{border-top-right-radius:3px;border-right:none}tr{border-top:1px solid #C1C3D1;border-bottom-:1px solid #C1C3D1;color:#666B85;font-size:16px;font-weight:400;text-shadow:0 1px 1px rgba(256,256,256,0.1)}tr:hover td{background:#4E5066;color:#FFF;border-top:1px solid #22262e;border-bottom:1px solid #22262e}tr:first-child{border-top:none}tr:last-child{border-bottom:none}tr:nth-child(odd) td{background:#EBEBEB}tr:nth-child(odd):hover td{background:#4E5066}tr:last-child td:first-child{border-bottom-left-radius:3px}tr:last-child td:last-child{border-bottom-right-radius:3px}td{background:#FFF;padding:20px;text-align:left;vertical-align:middle;font-weight:300;font-size:18px;text-shadow:-1px -1px 1px rgba(0,0,0,0.1);border-right:1px solid #C1C3D1}td:last-child{border-right:0}th.text-left{text-align:left}th.text-center{text-align:center}th.text-right{text-align:right}td.text-left{text-align:left}td.text-center{text-align:center}td.text-right{text-align:right}</style></head><body><table class="table-fill"><thead><tr><th class="text-left">Name</th><th class="text-left">Email</th><th class="text-left">Message</th></tr></thead><tbody class="table-hover"><tr><td class="text-left">'.$name.'</td><td class="text-left">'.$mail.'</td><td class="text-left">'.$message.'</td></tr></tbody></table></body></html>';
+				
+			if (mail($to, $subject, $message, $headers)) {   
+				header("Location:index.php?MailPass=True");
+			}else { 
+				header("Location:index.php?MailFailed=True");
+			}
+		}
+		
+		
+		
+		
+		
+		
 	}
 ?>
 <!DOCTYPE html>
@@ -54,6 +88,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src='src/js/jquery-3.1.1.min.js'></script>
+		<script src='src/js/main.js'></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
@@ -77,7 +112,7 @@
 		<div class="container-fluid"> 
 			<div class="row" id="contact">
 				<div class="col-lg-6 col-lg-offset-3">
-					<form class="" action="" method="GET" name="ContactForm" id="ContactForm">
+					<form class="" action='<?php echo $_SERVER['PHP_SELF']; ?>' method="GET" name="ContactForm" id="ContactForm" onSubmit='return check2();'>
 						<?php 
 							if(isset($_GET["CaptchaPass"])){
 								echo "<div>Message Sent</div>";
@@ -92,27 +127,30 @@
 							}
 						?>
 						<ul class="list-unstyled">
-							<div class="form-group">
+							<div id="div-name" class="form-group has-feedback">
 								<li>
-									<label for="contact-name">Your name:</label>
-									<input type="text" class="form-control" name="name" id="contact-name" value=""/>
+									<label for="contact-name" class="control-label">Your name:</label>
+									<input type="text" class="form-control" name="name" id="contact-name" placeholder="eg. John Smith" value="" onBlur="namecheck();"/>
+									<span id="span-name" class="" aria-hidden="true"></span>
 								</li>
 							</div>
-							<div class="form-group">
+							<div id="div-email" class="form-group has-feedback">
 								<li>
-									<label for="contact-email">Your email:</label>
-									<input type="text" class="form-control" name="email" id="contact-email" value=""/>
+									<label for="contact-email" class="control-label">Your email:</label>
+									<input type="text" class="form-control" name="email" id="contact-email" placeholder="eg. example@gmail.com" value="" onBlur="emailcheck();"/>
+									<span id="span-email" class="" aria-hidden="true"></span>
 								</li>
 							</div>
-							<div class="form-group">
+							<div id="div-captcha" class="form-group has-feedback">
 								<li>
 									<div class="g-recaptcha" data-sitekey="6LdpGhAUAAAAAKln-PvJqgAKFDDYFtZEsAA1Lx3V"></div>
 								</li>
 							</div>
-							<div class="form-group">
+							<div id="div-message" class="form-group has-feedback">
 								<li>
-									<label for="contact-message">Message</label>
-									<textarea class="form-control" name="message" id="contact-message"></textarea>
+									<label for="contact-message" class="control-label">Message</label>
+									<textarea class="form-control" name="message" id="contact-message" onBlur="messagecheck();"></textarea>
+									<span id="span-message" class="" aria-hidden="true"></span>
 								</li>
 							</div>
 							<div class="form-group">

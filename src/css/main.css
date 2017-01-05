@@ -469,6 +469,18 @@ img:not(.no-resize) {
     font-size: 1.3125rem;
     border-radius: 3px;
 }
+.button-label:hover.facebook{
+	background-color: #3c5a96;
+	text-decoration:none;
+}
+.button-label:hover.twitter{
+	background-color: #62aadc;
+	text-decoration:none;
+}
+.button-label:hover.googleplus{
+	background-color: #d95333;
+	text-decoration:none;
+}
 .active{ 
 	border-bottom:1px solid #000;
 }

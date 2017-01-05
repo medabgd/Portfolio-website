@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src='src/js/jquery-3.1.1.min.js'></script>
+		<script src='src/js/main.js'></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
@@ -103,7 +104,7 @@
 						<span class="dotted">&#8226;</span><li>milosmedic.com</li>				
 					</ul>
 					<div class="copyright">
-						2016  All rights reserved
+						2017  All rights reserved
 					</div>
 					<div class="wap">
 						<ul class="social-icons inline">
