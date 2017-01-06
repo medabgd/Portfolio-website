@@ -1,5 +1,4 @@
 *{padding:0px; margin:0px;}
-
 @font-face {
     font-family: brandon;
     src: url(../../assets/fonts/brandon.ttf);
@@ -70,17 +69,7 @@
 	.reposition{
 		font-size: 1.2em;
 	}
-
-
 }
-
-
-
-
-
-
-
-
 #site-footer {
     background-color: #242424;
     text-align: center;
@@ -210,9 +199,6 @@ padding-top: 1.8rem;
 .row{
 	margin:0px auto !important;
 }
-
-
-
 .work-list {
     width: 100%;
     margin-left: auto;
@@ -268,18 +254,6 @@ img:not(.no-resize) {
 .large-centered{
 	position:relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 .work-list .left-image .work-header {
     right: 0;
 }
@@ -308,18 +282,6 @@ img:not(.no-resize) {
 .logodesc a{
 	text-decoration:none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 45.063em){
 .work-header .work-title {
     margin: 0 0 30px;
@@ -370,21 +332,6 @@ img:not(.no-resize) {
     display: inline;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 45.063em){
 #share-all {
     display: block;
@@ -510,10 +457,8 @@ img:not(.no-resize) {
 }}
 #about-content .description {
     letter-spacing: 0;
-    max-width: 768px;
-	
+    max-width: 768px;	
 }
-
 .row {
     width: 100%;
     margin-left: auto;

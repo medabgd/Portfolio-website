@@ -15,9 +15,6 @@
 			header("Location:contact.php?CaptchaFailed=True");
 		}
 
-
-		
-		
 		$name = trim($_REQUEST['name']); 
 		$mail = trim($_REQUEST['email']); 
 		$message = trim($_REQUEST['message']); 
@@ -58,19 +55,13 @@
 			}else { 
 				header("Location:index.php?MailFailed=True");
 			}
-		}
-		
-		
-		
-		
-		
-		
+		}	
 	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Portfolio website</title>
+		<title>Milos Medic - Portfolio website</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="description" content="Milos Medic is a Serbian student and web developer, for web sites and applications."/>
@@ -93,7 +84,8 @@
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>
 	<body>
-	<a class="logodesc" href="index.php"><img class="img-responsive" src="assets/images/madebytj_logo.png"/></a>
+		<?php include_once("analyticstracking.php") ?>
+		<a rel="slide" class="logodesc" href="index.php"><img class="img-responsive" src="assets/images/milosmedic_logo.png"/></a>
 		<div class="navbar navbar-static-top menu">
 			<div class="container menu">
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -101,9 +93,9 @@
 				</button>
 				<div class="collapse navbar-collapse navHeaderCollapse navbar-centered">
 					<ul class="nav navbar-nav" id="nav">
-						<li><a href="index.php">Home</a></li>
-						<li><span class="dotted">&#8226;</span><a href="about.php">About</a></li>
-						<li><span class="dotted">&#8226;</span><a class="active" href="contact.php">Contact</a></li>
+						<li><a rel="index" href="index.php">Home</a></li>
+						<li><span class="dotted">&#8226;</span><a rel="author" href="about.php">About</a></li>
+						<li><span class="dotted">&#8226;</span><a rel="next" class="active" href="contact.php">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -173,17 +165,17 @@
 						</div>
 						<ul class="inline">
 							<li>
-								<a target="_blank" rel="nofollow" class="button-label facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmilosmedic.com" title="Share on Facebook: Portfolio+Website+-+Made+by+Milos+Medic">
+								<a rel="slide" target="_blank" rel="nofollow" class="button-label facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmilosmedic.com" title="Share on Facebook: Portfolio+Website+-+Made+by+Milos+Medic">
 									Facebook
 								</a>
 							</li>
 							<li>
-								<a target="_blank" rel="nofollow" class="button-label twitter" href="http://twitter.com/home?status=Portfolio+Website+-+Made+by+Milos+Medic+http%3A%2F%2Fmilosmedic.com+via+%40milos_meda" title="Share on Twitter: Portfolio+Website+-+Made+by+Milos+Medic">
+								<a rel="slide" target="_blank" rel="nofollow" class="button-label twitter" href="http://twitter.com/home?status=Portfolio+Website+-+Made+by+Milos+Medic+http%3A%2F%2Fmilosmedic.com+via+%40milos_meda" title="Share on Twitter: Portfolio+Website+-+Made+by+Milos+Medic">
 									Twitter
 								</a>
 							</li>
 							<li>
-								<a target="_blank" rel="nofollow" class="button-label googleplus" href="https://plus.google.com/share?url=http%3A%2F%2Fmilosmedic.com" title="Share on Google+: Portfolio+Website+-+Made+by+Milos+Medic">
+								<a rel="slide" target="_blank" rel="nofollow" class="button-label googleplus" href="https://plus.google.com/share?url=http%3A%2F%2Fmilosmedic.com" title="Share on Google+: Portfolio+Website+-+Made+by+Milos+Medic">
 									Google+
 								</a>
 							</li>
@@ -197,7 +189,7 @@
 			<div class="row">
 				<div class="column small-12 inner-content">
 					<div class="contact">
-						<a href="mailto:contact@milosmedic.com" title="" class="button">Get in touch</a>
+						<a rel="slide" href="mailto:contact@milosmedic.com" title="" class="button">Get in touch</a>
 					</div>
 					<ul class="inline doted small-dot name-url">
 						<li>Milos Medic</li>
@@ -209,13 +201,13 @@
 					<div class="wap">
 						<ul class="social-icons inline">
 							<li>
-								<a href="https://www.facebook.com/milosmedicmeda" rel="nofollow" target="_blank" title="Behance" class="fa decorate fa-facebook" aria-hidden="true"></a>
+								<a rel="slide" href="https://www.facebook.com/milosmedicmeda" rel="nofollow" target="_blank" title="Behance" class="fa decorate fa-facebook" aria-hidden="true"></a>
 							</li> 
 							<li>
-								<a href="#" rel="nofollow" target="_blank" title="LinkedIn" class="fa decorate fa-linkedin" aria-hidden="true"></a>
+								<a rel="slide" href="#" rel="nofollow" target="_blank" title="LinkedIn" class="fa decorate fa-linkedin" aria-hidden="true"></a>
 							</li>
 							<li>
-								<a href="https://github.com/medabgd" rel="nofollow" target="_blank" title="Pinterest" class="fa decorate fa-github" aria-hidden="true"></a>
+								<a rel="slide" href="https://github.com/medabgd" rel="nofollow" target="_blank" title="Pinterest" class="fa decorate fa-github" aria-hidden="true"></a>
 							</li> 
 						</ul>
 					</div>
