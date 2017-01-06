@@ -3,8 +3,8 @@
 		<title>Milos Medic - Portfolio website</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<meta name="description" content="Milos Medic is a Serbian student and web developer, for web sites and applications."/>
-		<meta name="keywords" content="Milos Medic, serbia, student, web developer, web site, front-end, back-end, php, javascript"/>
+		<meta name="description" content="Milos Medic is a Serbian student at University of Belgrade majoring in internet tehnology."/>
+		<meta name="keywords" content="Milos Medic, serbia, student, web site, front-end, back-end, php, javascript"/>
 		<meta name="author" content="Milos Medic"/>
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="article" />

@@ -41,29 +41,21 @@
 			</div>
 		</div>
 
-		<aside id="share-all" class="row">
-			<div class="container">
-				<div id="site-content">
-					<div class="row work-list">
-						<div class="col-xs-12">
-							<a rel="slide" class="work-link left-image" href="http://forum.milosmedic.com" title="Forum Meda">
-								<div class="work-image" style="background-color:#f7f0f7">
-									<img width="692" height="692" src="assets/images/forum.png" class="attachment-post-thumbnail wp-post-image" alt="Forum Meda" />
-								</div>
-								<div class="work-header">
-									<div class="work-title">
-										ForumMeda
-									</div>
-									<div  class="work-excerpt">
-										<p>Desktop application<br class="br-resp xlarge-only" /><br class="br-resp large-only" /><br class="br-resp medium-only" /> to share and comment <br class="br-resp small-only" />any content.</p>
-									</div>
-								</div>				
-							</a>
-						</div>
+		<div class="row">
+			<a rel="slide" class="work-link left-image" href="http://forum.milosmedic.com" title="Forum Meda">
+				<div class="col-xs-6 col-md-4 col-md-offset-2 headerpic" style="background-color:#f7f0f7">
+					<img src="assets/images/forum.png" class="img-responsive" alt="Forum Meda" />
+				</div>
+				<div class="col-xs-6 col-md-4 work-header">
+					<div class="work-title">
+						ForumMeda
+					</div>
+					<div  class="work-excerpt">
+						<p>Online discussion site where people can hold conversations in the form of posted messages..</p>
 					</div>
 				</div>
-			</div>
-		</aside>
+			</a>
+		</div>
 		
 		<aside id="share-all" class="row">
 			<div class="container">
