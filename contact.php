@@ -1,5 +1,6 @@
 	<?php
 	if(isset($_GET["btnSubmit"])){
+		$g=0;
 		$url="https://www.google.com/recaptcha/api/siteverify"; 
 		$privatekey="6LdpGhAUAAAAAAz4UVF37QI5zyyjoIkiFaRykAZh";
 
@@ -12,6 +13,7 @@
 		if($data->success===true){
 			header("Location:contact?CaptchaPass=True");
 		}else{
+			$g++;
 			header("Location:contact?CaptchaFailed=True");
 		}
 
@@ -22,8 +24,7 @@
 		$rname = "/^[\w\s\/\.\_\d]{2,28}$/";
 		$rmail = "/^[\w\.]+[\d]*@[\w]+\.\w{2,3}(\.[\w]{2})?$/"; 
 		
-		$greske = array(); 
-		 $g=0; 
+		  
 		
 		if(!preg_match($rname, $name)){
 			$g++;
@@ -95,7 +96,7 @@
 					<ul class="nav navbar-nav" id="nav">
 						<li><a rel="canonical" href="http://milosmedic.com/home">Home</a></li>
 						<li><span class="dotted">&#8226;</span><a rel="canonical" href="http://milosmedic.com/about">About</a></li>
-						<li><span class="dotted">&#8226;</span><a rel="canonical" href="http://milosmedic.com/contact">Contact</a></li>
+						<li><span class="dotted">&#8226;</span><a rel="canonical" class="active"  href="http://milosmedic.com/contact">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -165,17 +166,17 @@
 						</div>
 						<ul class="inline">
 							<li>
-								<a target="_blank" rel="me nofollow" class="button-label facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmilosmedic.com" title="Share on Facebook: Portfolio+Website+-+Made+by+Milos+Medic">
+								<a target="_blank" rel="me nofollow" class="button-label facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmilosmedic.com" title="Share on Facebook: Portfolio Website Made by Milos Medic">
 									Facebook
 								</a>
 							</li>
 							<li>
-								<a target="_blank" rel="me nofollow" class="button-label twitter" href="http://twitter.com/home?status=Portfolio+Website+-+Made+by+Milos+Medic+http%3A%2F%2Fmilosmedic.com+via+%40milos_meda" title="Share on Twitter: Portfolio+Website+-+Made+by+Milos+Medic">
+								<a target="_blank" rel="me nofollow" class="button-label twitter" href="http://twitter.com/home?status=Portfolio+Website+-+Made+by+Milos+Medic+http%3A%2F%2Fmilosmedic.com+via+%40milos_meda" title="Share on Twitter: Portfolio Website Made by Milos Medic">
 									Twitter
 								</a>
 							</li>
 							<li>
-								<a target="_blank" rel="me nofollow" class="button-label googleplus" href="https://plus.google.com/share?url=http%3A%2F%2Fmilosmedic.com" title="Share on Google+: Portfolio+Website+-+Made+by+Milos+Medic">
+								<a target="_blank" rel="me nofollow" class="button-label googleplus" href="https://plus.google.com/share?url=http%3A%2F%2Fmilosmedic.com" title="Share on Google+: Portfolio Website Made+by Milos Medic">
 									Google+
 								</a>
 							</li>
@@ -189,7 +190,7 @@
 			<div class="row">
 				<div class="column small-12 inner-content">
 					<div class="contact">
-						<a rel="nofollow" href="mailto:contact@milosmedic.com" title="text" class="button">Get in touch</a>
+						<a rel="nofollow" href="mailto:contact@milosmedic.com" title="Send mail" class="button">Get in touch</a>
 					</div>
 					<ul class="inline doted small-dot name-url">
 						<li>Milos Medic</li>

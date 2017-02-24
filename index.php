@@ -40,30 +40,54 @@
 				</div>
 			</div>
 		</div>
+ 
 
-		<div class="row">
-			<a rel="me nofollow" class="work-link left-image" href="http://forum.milosmedic.com" title="Forum Meda">
-				<div class="col-xs-6 col-md-4 col-md-offset-2 headerpic" style="background-color:#f7f0f7">
-					<img src="assets/images/forum.png" class="img-responsive" alt="Forum Meda" />
-				</div>
-				<div class="col-xs-6 col-md-4 work-header">
-					<div class="work-title">
-						ForumMeda
+		<aside id="share-all" class="row">
+			<div class="container">
+				<div class="col-xs-12">
+					<div class="column-inner">
+						<h2 class="page-title"><span class="dash">—&nbsp;&nbsp;</span>My projects<span class="dash">&nbsp;&nbsp;—</span></h2>
+						<ul class="inline">
+							<li><div class="projects-grid"> 
+								<a class="project-container" target="_blank" rel="me nofollow" href="http://movies.milosmedic.com">
+									<div class="border"></div>
+									<div class="project">
+										<div class="visual">
+											<img width="200" height="250" src="assets/images/movies.png" alt="Movies Database by Milos Medic"> 
+										</div>
+										<div class="caption">
+											<h3 class="title">MOVIES DATABASE</h3>
+											<div class="description2">The Free Movie Database is a free web service to obtain movie information...</div>
+										</div>
+									</div>
+								</a> </div>
+							</li>
+							<li><div class="projects-grid"> 
+								<a class="project-container" target="_blank" rel="me nofollow" href="http://forum.milosmedic.com">
+									<div class="border"></div>
+									<div class="project">
+										<div class="visual">
+											<img width="200" height="250" src="assets/images/forum.png" alt="Forum Meda by Milos Medic"> 
+										</div>
+										<div class="caption">
+											<h3 class="title">Forum</h3>
+											<div class="description2">Online discussion site where people can hold conversations in the form of posted messages...</div>
+										</div>
+									</div>
+								</a> </div>
+							</li> 
+						</ul>
 					</div>
-					<div  class="work-excerpt">
-						<p>Online discussion site where people can hold conversations in the form of posted messages..</p>
-					</div>
 				</div>
-			</a>
-		</div>
+			</div>
+		</aside>
+		
 		
 		<aside id="share-all" class="row">
 			<div class="container">
 				<div class="col-xs-12">
 					<div class="column-inner">
-						<div class="share-tile">
-							Share On
-						</div> 
+						<h2 class="page-title"><span class="dash">—&nbsp;&nbsp;</span>Share on<span class="dash">&nbsp;&nbsp;—</span></h2>
 						<ul class="inline">
 							<li>
 								<a target="_blank" rel="me nofollow" class="button-label facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmilosmedic.com" title="Share on Facebook: Portfolio+Website+-+Made+by+Milos+Medic">
@@ -90,7 +114,7 @@
 			<div class="row">
 				<div class="column small-12 inner-content">
 					<div class="contact">
-						<a rel="nofollow" href="mailto:contact@milosmedic.com" title="text" class="button">Get in touch</a>
+						<a rel="nofollow" href="mailto:contact@milosmedic.com" title="Send mail" class="button">Get in touch</a>
 					</div>
 					<ul class="inline doted small-dot name-url">
 						<li>Milos Medic</li>

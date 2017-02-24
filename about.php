@@ -34,7 +34,7 @@
 				<div class="collapse navbar-collapse navHeaderCollapse navbar-centered">
 					<ul class="nav navbar-nav" id="nav">
 						<li><a rel="canonical" href="http://milosmedic.com/home">Home</a></li>
-						<li><span class="dotted">&#8226;</span><a rel="canonical" href="http://milosmedic.com/about">About</a></li>
+						<li><span class="dotted">&#8226;</span><a rel="canonical" class="active"  href="http://milosmedic.com/about">About</a></li>
 						<li><span class="dotted">&#8226;</span><a rel="canonical" href="http://milosmedic.com/contact">Contact</a></li>
 					</ul>
 				</div>
@@ -46,11 +46,10 @@
 				<div class="col-lg-6 col-lg-offset-3">
 					<section class="about-section description row">
 						<p>
-							<em class="new-row">My name is Milos Medic and I am a student</em>
-							<em class="new-row">currently living and studying in Belgrade. </em>
-							<em>I am looking for internship/junior job position.</em><br/>
-							<em>If you would like to know more or just say hi, </em>
-							<em>don’t hesitate to contact me.</em>
+							<em class="new-row">
+							I am a student currently living in Belgrade(Serbia) and I am on the third year of ICT collage, which is a great school for learning about internet technologies.</em><em class="new-row"> I am interested in Web development, and I have created different sites using HTML(5), CSS(3), JavaScript, jQuery, AJAX, PHP, MySQL and I'm familiar with basics of Git and responsive design technology - Bootstrap. </em><em class="new-row">I've also learned about basic programing with languages Java and C#. 
+							</em><em class="new-row">
+							I'm a sociable and hardworking person, my goal is to find a company which can provide me, as a beginner, with valuable instructions and informations and I am interested in volunteering to gain experience in the field.
 						</p>
 					</section>
 				</div>
@@ -95,7 +94,7 @@
 			<div class="row">
 				<div class="column small-12 inner-content">
 					<div class="contact">
-						<a rel="nofollow" href="mailto:contact@milosmedic.com" title="text" class="button">Get in touch</a>
+						<a rel="nofollow" href="mailto:contact@milosmedic.com" title="Send mail" class="button">Get in touch</a>
 					</div>
 					<ul class="inline doted small-dot name-url">
 						<li>Milos Medic</li>

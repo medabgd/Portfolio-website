@@ -3,6 +3,10 @@
     font-family: brandon;
     src: url(../../assets/fonts/brandon.ttf);
 }
+@font-face {
+    font-family: avenir;
+    src: url(../../assets/fonts/avenir.ttf);
+}
 .navbar{
 	margin-top:20px;
 }
@@ -338,7 +342,7 @@ img:not(.no-resize) {
 #share-all .column-inner {
     border-top: 1px solid #e6e6e6;
     padding-top: 75px;
-    padding-bottom: 140px;
+    padding-bottom: 90px;
     text-align: center;  
 }
 #share-all .share-tile {
@@ -402,10 +406,13 @@ img:not(.no-resize) {
 .active:hover{ 
 	border-bottom:1px solid #000;
 }
+#nav a{
+	font-size:15px;
+}
 .about-section{
 	text-align: center;
-	font-family: "brandon",Tahoma,sans-serif;
-    font-weight: normal;
+	font-family: "avenir",Tahoma,sans-serif;
+    font-weight: bold;
     font-style: normal;
     text-decoration: none;
 	font-size: 2.3125rem;
@@ -473,62 +480,80 @@ img:not(.no-resize) {
 		display:block;
 	}
 }
-@media only screen and (min-width: 767px){
-	.work-header {
-		height: 336px;
-		padding-top: 60px;
-		padding-bottom: 60px; 
-	}
-	.headerpic img{
-		max-height:365px;
-	}
 
+
+ 
+
+
+
+.projects-grid .project-container {
+    display: block;
+    position: relative;
+    width: 210px;
+    height: 368px;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    cursor: pointer;
 }
-@media only screen and (max-width: 767px){
-	.work-header {
-		height: 236px;
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
-	.work-excerpt p{
-		font-size: 1.7rem;
-	}  
-	.headerpic img{
-		max-height:365px;
-	}	
-	.img-responsive{
-		margin-top:30px !important;
-	}
-	#share-all .column-inner{
-		padding-top: 10px;
-		padding-bottom: 20px;
-	}
-	.description {
-		margin-top: 30px !important;
-		margin-bottom: 50px !important;
-	}
-	.about-section .botom {
-		margin-bottom: 60px !important;
-	}
-	.active {
-		border-bottom: none;
-	}
+.projects-grid .project-container {
+    float: left;
+    margin: 0 20px 52px 20px;
 }
 
-.work-list .left-image .work-header {
-    right: 0;
-}
-.work-list .work-header {
+.projects-grid .project-container .border {
+    background: #999 !important;
     display: block;
     position: absolute;
-    top: -40px;
-    left: 360px;
-    width: 604px;
-	float:right;
+    width: 210px;
+    height: 260px;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 0; 
+    transition: all 0.3s ease 0s; 
+}
+.projects-grid .project-container .project {
+    position: relative;
+    padding: 5px;
 } 
-.work-header {
-    transition: background-color 0.3s ease-out; 
-    border-top: 1px solid #e6e6e6;
-    background-color: #242424;
-    text-align: center; 
+.projects-grid .project-container .project .visual {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+} 
+.projects-grid .project-container .project .caption {
+    text-align: center;
+} 
+.projects-grid .project-container .project .visual img {
+    display: block;
+    margin-top: 0px;
+}   
+.projects-grid .project-container .project .caption .title {
+    font-family: 'Avenir LT W01 95 Black';
+    text-transform: uppercase;
+    color: #012c33;
+	font-weight:bold;
+    font-size: 18px;
+    margin: 27px 0 0 0;
+} 
+.projects-grid .project-container .project .caption .description2 {
+    color: #656060;
+    font-size: 13px;
+    margin: 17px 0 0 0;
+    line-height: 20px;
+}
+.page-title { 
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
+    margin: 0 0 40px 0;
 }
